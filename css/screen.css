@@ -3,23 +3,22 @@
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'HK Grotesk Web';
-    font-weight: 200;
-    src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: 'HK Grotesk Web';
-    font-weight: 400;
-    src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: 'HK Grotesk Web';
-    font-weight: 600;
-    src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
-  }
+  font-family: 'HK Grotesk Web';
+  font-weight: 200;
+  src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'HK Grotesk Web';
+  font-weight: 400;
+  src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HK Grotesk Web';
+  font-weight: 600;
+  src: url('../fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../fonts/hkgrotesk-medium-webfont.woff') format('woff');
+}
 
 /*------------------------------------*\
   #GENERIC
@@ -34,7 +33,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "HK Grotesk Web", Helvetica, arial, sans-serif;
+  font-family: 'HK Grotesk Web', Helvetica, arial, sans-serif;
   color: #202024;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -48,11 +47,11 @@ html {
 }
 
 @media (min-width: 768px) {
-    html {
-      font-size: 20px;
-      line-height: 1.6;
-    }
+  html {
+    font-size: 20px;
+    line-height: 1.6;
   }
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -178,7 +177,6 @@ a:hover,
 a:focus {
   color: #3e3ea8;
 }
-
 
 /*------------------------------------*\
   #OBJECTS
@@ -347,6 +345,29 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+/*
+    Component: Logo
+    ---
+    Website main logo
+*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+  .c-logo__symbol {
+  }
+  
+  .c-logo {
+      height: 40px;
+  }
+}
 
 /*------------------------------------*\
   #UTILITIES
