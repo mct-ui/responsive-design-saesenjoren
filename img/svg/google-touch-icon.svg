@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-google-touch-icon">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="google-touch-icon" clip-path="url(#clip-google-touch-icon)">
+    <g id="mark" transform="translate(20)">
+      <path id="Path_1" data-name="Path 1" d="M15.659,137.25v256l216.687-128V9.25Z" transform="translate(201.028 118.75)" fill="#3887f7" fill-rule="evenodd"/>
+      <path id="Path_2" data-name="Path 2" d="M216.687,0,0,128V384L216.687,256Z" fill="#5051db" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
