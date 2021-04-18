@@ -183,6 +183,33 @@ a:focus {
 \*------------------------------------*/
 
 /*
+    Objects: section
+    ---
+    Creates vertical whitespace between adjacent sections inside a row
+*/
+
+.o-section {
+  display: flow-root;
+}
+
+.o-section + .o-section {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .o-section--lg + .o-section--lg,
+  .o-section--xl + .o-section--xl {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .o-section--xl + .o-section--xl {
+    margin-top: 72px;
+  }
+}
+
+/*
     Objects: Row
     ---
     Creates a horizontal row that stretches the viewport and adds padding around children
@@ -204,6 +231,11 @@ a:focus {
   .o-row {
     padding-left: 48px;
     padding-right: 48px;
+  }
+
+  .o-row--md {
+    padding-top: 48px;
+    padding-bottom: 24px;
   }
 
   .o-row--lg {
@@ -238,6 +270,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .o-layout__item {
@@ -342,6 +376,17 @@ a:focus {
   align-content: space-between;
 }
 
+/*
+    Objects: List
+    ---
+    Small reusable object to remove default list styling from lists
+*/
+
+.o-list {
+  list-style: none;
+  padding: 0;
+}
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -353,25 +398,118 @@ a:focus {
 */
 
 .c-logo {
-    height: 32px;
+  height: 32px;
 }
 
 .c-logo__symbol {
-    height: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
   .c-logo__symbol {
   }
-  
+
   .c-logo {
-      height: 40px;
+    height: 40px;
+  }
+}
+
+/*
+    Component: Nav
+    ---
+    Main navigation of the site
+*/
+
+.c-nav {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  font-weight: 400;
+  padding: 8px 0;
+  display: block;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+  color: #202024;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+  color: #5051db;
+}
+
+.c-nav--meta {
+  font-size: 16px;
+}
+
+.c-nav__link--meta,
+.c-nav__link--meta:visited,
+.c-nav__link--meta:active {
+  color: #6c6c75;
+}
+
+.c-nav__link--meta:hover,
+.c-nav__link--meta:focus {
+  color: #5051db;
+}
+
+.c-nav__link,
+.c-nav__link:hover,
+.c-nav__link:focus {
+  color: #5051db;
+}
+
+@media (min-width: 768px) {
+  .c-nav__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .c-nav__link {
+    padding: 16px 8px 0 8px;
+  }
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-header__nav {
+    display: block;
   }
 }
 
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+
+/*
+    Utilities: spacing
+    ---
+    Utility classes to put specific margins and paddings onto elements
+*/
+
+.u-pt-clear {
+  padding-top: 0 !important;
+}
 
 /*
     Utilities: max-width
