@@ -221,6 +221,10 @@ a:focus {
   display: flow-root;
 }
 
+.o-row-neutral-x-light {
+  background-color: #F7F7F7;
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -236,6 +240,11 @@ a:focus {
   .o-row--md {
     padding-top: 48px;
     padding-bottom: 24px;
+  }
+  .o-row--md-greypic {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-left: 120px;
   }
 
   .o-row--lg {
@@ -271,7 +280,6 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
 .o-layout__item {
