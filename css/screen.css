@@ -400,6 +400,7 @@ a:focus {
   padding: 0;
 }
 
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -610,6 +611,8 @@ a:focus {
   display: block;
 }
 
+
+
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
@@ -652,6 +655,47 @@ a:focus {
     padding: 16px 8px 0 8px;
   }
 }
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+}
+
+.c-footer__logo {
+}
+
+.c-footer__nav {
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+    }
+
+    .c-footer__logo {
+    }
+
+    .c-footer__nav {
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+    }
+
+    .c-footer__logo {
+    }
+
+    .c-footer__logo .c-logo {
+    }
+
+    .c-footer__nav {
+    }
+}
+
 
 /*
     Component: header
