@@ -244,7 +244,7 @@ a:focus {
   .o-row--md-greypic {
     padding-top: 48px;
     padding-bottom: 24px;
-    padding-left: 120px;
+    padding-left: 60px;
   }
 
   .o-row--lg {
@@ -279,7 +279,7 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .o-layout__item {
@@ -399,6 +399,143 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+
+/*
+    Component: CTA link
+    ---
+    Small cta link with custom animation
+*/
+
+.c-link-cta {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 4px 0;
+  transition: color .175s ease-in;
+}
+
+.c-link-cta,
+.c-link-cta:visited,
+.c-link-cta:active {
+  color: #7373F5;
+}
+
+.c-link-cta::after {
+  content: "";
+}
+
+.c-link-cta::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #7373F5;
+  transform: scaleX(.5);
+  transform-origin: left;
+  transition-property: .175s;
+  transition-timing-function: ease-in;
+}
+.c-link-cta:hover {
+  color: #3E3EA8;
+}
+
+.c-link-cta:hover::after {
+  transform: scaleX(1);
+  background-color: #3E3EA8;
+}
+
+
+
+/*
+    Component: Lead
+    ---
+    Lead type treatments to style everything that differs from standard typography elements
+*/
+
+.c-lead {
+  font-weight: 200;
+}
+
+.c-right-text {
+  margin-top: -50px;
+}
+
+.c-top {
+  margin-top: -100px;
+  margin-left: 120px;
+}
+
+.c-lead--lg {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.c-lead--xl {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.c-lead--xxl {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.c-lead--xxxl {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+@media (min-width: 768px) {
+  .c-lead--lg {
+      font-size: 23px;
+      line-height: 32px;
+  }
+
+  .c-lead--xl {
+      font-size: 32px;
+      line-height: 40px;
+  }
+
+  .c-lead--xxl {
+      font-size: 41px;
+      line-height: 48px;
+  }
+
+  .c-lead--xxxl {
+      font-size: 52px;
+      line-height: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-lead--lg {
+      font-size: 26px;
+      line-height: 36px;
+  }
+
+  .c-lead--xl {
+      font-size: 36px;
+      line-height: 48px;
+  }
+
+  .c-lead--xxl {
+      font-size: 52px;
+      line-height: 64px;
+  }
+
+  .c-lead--xxxl {
+      font-size: 66px;
+      line-height: 72px;
+  }
+}
+
+
 /*
     Component: Logo
     ---
@@ -432,6 +569,21 @@ a:focus {
   font-size: 18px;
   line-height: 24px;
 }
+
+
+
+.c-nav__item--meta {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 120px;
+}
+
+.c-nav__item--meta1 {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+}
+
 
 .c-nav__link {
   text-decoration: none;
@@ -508,6 +660,26 @@ a:focus {
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+
+/*
+    Utilities: color
+    ---
+    Utility classes to put specific colors onto elements
+*/
+
+.u-color-primary-light {
+  color: #7373F5 !important;
+}
+
+.u-color-primary-base {
+  color: #5051DB !important;
+}
+
+.u-color-primary-dark {
+  color: #3E3EA8 !important;
+}
+
+
 
 /*
     Utilities: spacing
